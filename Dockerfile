@@ -10,7 +10,7 @@ ENV ws_path /root/tutorial_ws
 RUN mkdir -p $ws_path && \
 	mv /home/hello_world.cpp $ws_path/hello_world.cpp && \
 	cd $ws_path && \
-	gcc hello_world.cpp -o hello_world
+	g++ hello_world.cpp -o hello_world
 
 WORKDIR $ws_path
 
